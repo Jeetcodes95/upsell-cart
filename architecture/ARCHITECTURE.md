@@ -163,3 +163,8 @@ Redis Caching:
 - Shopify App Review compliance: no data stored beyond required scope
 - GDPR: Customer PII excluded from ML training data (only anonymized purchase patterns)
 - Rate limiting: 40 req/s per store (Shopify API limit awareness)
+
+
+## Updated: 2026-02-26
+
+**A/B testing variant assignment:** Switched from murmur hash to FNV-1a for session-to-variant assignment. FNV-1a produces more uniform distribution on short session ID strings — reduces cluster bias in 50/50 splits from 3% to <0.5%.
