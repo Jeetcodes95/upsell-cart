@@ -45,3 +45,6 @@
 - [ ] ProductHunt launch
 - [ ] Target: 100 installed stores in 30 days post-launch
 - [ ] Target: $5k MRR by Month 12
+
+
+> **Note (2026-02-28):** Weekend review — post-purchase extension acceptance rate at 18.4% on test data. Validating with larger dataset before publishing results.
