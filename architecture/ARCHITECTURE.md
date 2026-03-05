@@ -173,3 +173,8 @@ Redis Caching:
 ## Updated: 2026-03-02
 
 **Recommendation cache strategy:** Added cache warming on product catalog sync. When a merchant's catalog updates, the top-20 product recommendation sets are pre-computed and cached. Cold cart requests now hit warm cache 70% of the time.
+
+
+## Updated: 2026-03-05
+
+**Bundle discount engine:** Added compound discount validation — system now prevents applying two percentage discounts to the same line item simultaneously (e.g., bundle discount + automatic Shopify discount). Resolution: apply bundle discount first, flag automatic discounts as incompatible in API response.
