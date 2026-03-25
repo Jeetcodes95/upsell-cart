@@ -39,3 +39,13 @@
 
 ### Changed
 - A/B variant assignment: murmur hash → FNV-1a (uniform distribution)
+
+
+## [Unreleased] — 2026-03-25
+
+### Performance
+- Webhook dedup TTL: 24h → 6h (Redis memory −40%)
+- Recommendations: cache warming on catalog sync (70% warm-cache hit rate)
+
+### Fixed
+- Bundle discount: prevent compound overlap with Shopify automatic discounts
