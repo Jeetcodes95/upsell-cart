@@ -228,3 +228,8 @@ Redis Caching:
 ## Updated: 2026-04-09
 
 **Webhook deduplication TTL adjusted:** Reduced Redis deduplication key TTL from 24h to 6h. Shopify's retry window is 5 minutes × 19 retries = ~2h max. 24h TTL was over-retaining keys, increasing Redis memory usage by ~40% unnecessarily.
+
+
+## Updated: 2026-04-13
+
+**Bundle discount engine:** Added compound discount validation — system now prevents applying two percentage discounts to the same line item simultaneously (e.g., bundle discount + automatic Shopify discount). Resolution: apply bundle discount first, flag automatic discounts as incompatible in API response.
