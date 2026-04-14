@@ -102,3 +102,11 @@
 
 
 > **Note (2026-04-11):** Weekend review — post-purchase extension acceptance rate at 18.4% on test data. Validating with larger dataset before publishing results.
+
+
+### Week 15 Progress (2026-04-14)
+
+- ✅ Recommendation cache warming on catalog sync
+- ✅ Bundle discount compound validation logic
+- 🔄 Post-purchase Shopify extension: one-click upsell flow 70% done
+- 📋 Next: Billing API — Shopify subscription lifecycle events
