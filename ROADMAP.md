@@ -129,3 +129,11 @@
 
 
 > **Note (2026-05-02):** Weekend review — post-purchase extension acceptance rate at 18.4% on test data. Validating with larger dataset before publishing results.
+
+
+### Week 18 Progress (2026-05-05)
+
+- ✅ Product catalog sync optimized with incremental webhook updates
+- ✅ Webhook deduplication TTL reduced (40% Redis memory reduction)
+- 🔄 A/B testing: statistical significance calculator in progress
+- 📋 Next: Auto-winner selection at 95% confidence threshold
