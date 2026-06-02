@@ -164,3 +164,11 @@
 - ✅ Bundle discount compound validation logic
 - 🔄 Post-purchase Shopify extension: one-click upsell flow 70% done
 - 📋 Next: Billing API — Shopify subscription lifecycle events
+
+
+### Week 22 Progress (2026-06-02)
+
+- ✅ Product catalog sync optimized with incremental webhook updates
+- ✅ Webhook deduplication TTL reduced (40% Redis memory reduction)
+- 🔄 A/B testing: statistical significance calculator in progress
+- 📋 Next: Auto-winner selection at 95% confidence threshold
