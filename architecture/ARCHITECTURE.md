@@ -313,3 +313,8 @@ Redis Caching:
 ## Updated: 2026-06-11
 
 **Recommendation cache strategy:** Added cache warming on product catalog sync. When a merchant's catalog updates, the top-20 product recommendation sets are pre-computed and cached. Cold cart requests now hit warm cache 70% of the time.
+
+
+## Updated: 2026-06-15
+
+**Webhook deduplication TTL adjusted:** Reduced Redis deduplication key TTL from 24h to 6h. Shopify's retry window is 5 minutes × 19 retries = ~2h max. 24h TTL was over-retaining keys, increasing Redis memory usage by ~40% unnecessarily.
