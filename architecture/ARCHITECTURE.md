@@ -333,3 +333,8 @@ Redis Caching:
 ## Updated: 2026-06-25
 
 **Bundle discount engine:** Added compound discount validation — system now prevents applying two percentage discounts to the same line item simultaneously (e.g., bundle discount + automatic Shopify discount). Resolution: apply bundle discount first, flag automatic discounts as incompatible in API response.
+
+
+## Updated: 2026-06-29
+
+**A/B testing variant assignment:** Switched from murmur hash to FNV-1a for session-to-variant assignment. FNV-1a produces more uniform distribution on short session ID strings — reduces cluster bias in 50/50 splits from 3% to <0.5%.
