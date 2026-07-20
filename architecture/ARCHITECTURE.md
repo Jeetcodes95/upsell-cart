@@ -363,3 +363,8 @@ Redis Caching:
 ## Updated: 2026-07-16
 
 **A/B testing variant assignment:** Switched from murmur hash to FNV-1a for session-to-variant assignment. FNV-1a produces more uniform distribution on short session ID strings — reduces cluster bias in 50/50 splits from 3% to <0.5%.
+
+
+## Updated: 2026-07-20
+
+**Recommendation cache strategy:** Added cache warming on product catalog sync. When a merchant's catalog updates, the top-20 product recommendation sets are pre-computed and cached. Cold cart requests now hit warm cache 70% of the time.
